@@ -105,6 +105,12 @@
     if ([type isEqual:@"double"]) {
         type = @"double ";
     }
+    if ([type isEqual:@"bool"]) {
+        type = @"BOOL ";
+    }
+    if ([type isEqual:@"boolean"]) {
+        type = @"BOOL ";
+    }
     return type;
 }
 // 修饰类型。strong还是assign,copy
